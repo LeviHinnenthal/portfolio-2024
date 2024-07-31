@@ -32,11 +32,10 @@ export const FloatingNav = ({
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
-        if (direction < 0) {
+       
           setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        
+        
       }
     }
   });
@@ -68,7 +67,7 @@ export const FloatingNav = ({
               "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-300"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="block sm:hidden fa-regular">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}

@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Shapes from "./Shapes";
 import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   const component = useRef(null);
@@ -18,17 +19,17 @@ const Hero = () => {
       tl.fromTo(
         ".animatedName",
         {
-          x: -100,
+          //x: -100,
           opacity: 0,
-          rotate: -10,
+          // rotate: -10,
         },
         {
-          x: 0,
+         // x: 0,
           opacity: 1,
-          rotate: 0,
-          ease: "elastic.out(1.5,0.3)",
-          duration: 1,
-          transformOrigin: "left top",
+         // rotate: 0,
+        //  ease: "elastic.out(1.5,0.3)",
+          duration: 0.3,
+         // transformOrigin: "left top",
           stagger: {
             each: 0.1,
             from: "random",
@@ -39,31 +40,26 @@ const Hero = () => {
       tl.fromTo(
         ".animatedDev",
         {
-          y: 20,
+        //  y: 20,
           opacity: 0,
-          scale: 1.2,
+         // scale: 1.2,
         },
         {
-          y: 0,
+      //    y: 0,
           opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "elastic.out(1.1,0.3)",
+        //  scale: 1,
+         // duration: 1,
+         // ease: "elastic.out(1.1,0.3)",
         }
       );
       tl.fromTo(
         ".magicButton",
         {
-          y: 20,
           opacity: 0,
-          scale: 1.2,
         },
         {
-          y: 0,
           opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "elastic.out(1.5,0.3)",
+
         }
       );
     }, component);
@@ -82,7 +78,10 @@ const Hero = () => {
           className="-top-10 -left-full h-[80vh] w-[50vw]"
           fill="purple"
         />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight
+          className="top-28 left-0 sm:left-80 h-[80vh] w-[50vw]"
+          fill="blue"
+        />
       </div>
 
       <section
@@ -111,7 +110,13 @@ const Hero = () => {
           <div className="animatedDev text-white text-3xl sm:text-[40px] font-bold sm:mt-2 opacity-0 animatedDev">
             Frontend Developer
           </div>
-            <MagicButton />
+          <a href="#about">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"              
+            />
+          </a>
         </div>
         <div className="shapes w-full">
           <Shapes />
