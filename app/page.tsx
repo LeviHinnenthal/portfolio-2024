@@ -37,6 +37,7 @@ export default function Home() {
 
       <div className="texture-background h-full"></div>
       <Footer />
+      
     </main>
   );
 }
