@@ -60,6 +60,41 @@ export const products = [
   },
 
 
+  {
+    title: "Car Rental",
+    link: "https://car-next-silk.vercel.app/",
+    thumbnail: CarRentalPng,
+  },
+  {
+    title: "Nike Store",
+    link: "https://nike-store-dusky.vercel.app/",
+    thumbnail: NikeStorePng,
+  },
+  {
+    title: "Daunku",
+    link: "https://interior-plants.vercel.app/",
+    thumbnail: DaunkuPng,
+  },
+
+
+
+  {
+    title: "Car Rental",
+    link: "https://car-next-silk.vercel.app/",
+    thumbnail: CarRentalPng,
+  },
+  {
+    title: "Nike Store",
+    link: "https://nike-store-dusky.vercel.app/",
+    thumbnail: NikeStorePng,
+  },
+  {
+    title: "Daunku",
+    link: "https://interior-plants.vercel.app/",
+    thumbnail: DaunkuPng,
+  },
+
+
 
 
 ];
