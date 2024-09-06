@@ -64,40 +64,36 @@ export const products = [
     thumbnail: DaunkuPng,
   },
 
-
   {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App1,
+    title: "Nike Store",
+    link: "https://nike-store-dusky.vercel.app/",
+    thumbnail: NikeStorePng,
+  },
+  {
+    title: "Daunku",
+    link: "https://interior-plants.vercel.app/",
+    thumbnail: DaunkuPng,
   },
 
 
   {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App2,
+    title: "Car Rental",
+    link: "https://car-next-silk.vercel.app/",
+    thumbnail: CarRentalPng,
   },
   {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App3,
+    title: "Nike Store",
+    link: "https://nike-store-dusky.vercel.app/",
+    thumbnail: NikeStorePng,
+  },
+  {
+    title: "Daunku",
+    link: "https://interior-plants.vercel.app/",
+    thumbnail: DaunkuPng,
   },
 
-  {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App4,
-  },
-  {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App5,
-  },
-  {
-    title: "Uber app",
-    link: "/",
-    thumbnail: App6,
-  },
+
+
 
 
 
